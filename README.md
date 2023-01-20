@@ -4,7 +4,7 @@
 <head></head>
 <body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1087.0">
 <h1><span style="color:#008000;">README.md</span></h1>
-<img src="https://github.com/data-engineer-sk/AWS-ETL-Project/blob/main/ETL%20Pipeline%20via%20AWS.png" ALIGN=”left” alt="ETL Processing via Nasdaq API" />
+<img src="https://github.com/data-engineer-sk/AWS-ETL-Project/blob/main/images/ETL%20Final%20Infrastructure.png" ALIGN=”left” alt="ETL Processing on AWS" />
 </body>
 </html>
   
