@@ -1,7 +1,5 @@
 # ETL Pipeline via AWS (S3/Lambda/Redshift/Grafana Services)
 
-#################
-
 <html>
 <head></head>
 <body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1087.0">
