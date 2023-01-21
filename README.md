@@ -14,48 +14,21 @@
 The project provides service to our client who run his café business in various branches in UK.  However, the café has seen unprecedented growth and has expanded to hundreds of outlets across the country.  Due to the demand the company is receiving, they need to figure out how they can best target new and returning customers, and also understand which products are selling well.  They are experiencing issues with collating and analysing the data they are producing at each branch, as their technical setup is limited.  I am now to be requested to step in and provide consultation on what they need to do in order to grow their technical offerings, so that they can continue to accelerate their growth.
 
 ## PROBLEMS
-The company currently has no way of identifying trends, meaning they are potentially losing out on major revenue streams.  They are in desperate need of help putting together a platform that will allow them to easily understand all of the data they are producing.  Due to the highly professional work you completed for them in the past, they are keen to work alongside you in creating a solution to solve the problem they're facing.
+The company currently has no way of identifying trends, meaning they are potentially losing out on major revenue streams.  They are in desperate need of help putting together a platform that will allow them to easily understand all of the data they are producing.  Due to the highly professional work you completed for them in the past, they are keen to work alongside your project in creating a solution to solve the problem their problems.
 
 ## REQUIREMENT
 Every day, each branch has to prepare a CSV file containing data about every transaction they made for that day is generated.  At 8pm, the data is uploaded to a piece of software installed in the back office computers.  Daily, weekly or monthly reports for sales figures and other related business metrics are created.
 
-
-## SKILLS REQUIRED
-You will need to apply a range of software and data engineering skills in order to successfully build the project. You will be trained up on cutting edge technology, which you can then use to apply to the project. Here are some examples:
-• ETL
+## SKILLS AND TECHNOLOGIES REQUIRED
+In this project, the following data engineering techs will be applied in order to successfully build the pipeline. Namely:
+• Python
+• ETL Techniques
 • DataWarehousing
-• DataAnalytics/Visualisations/BusinessIntelligence • Monitoring
-• DevelopmentOperations(DevOps)
-
-## TECHNOLOGIES
-You will be using a wide range of technologies to support the development of your ETL application.
-Some of them you will be familiar with, others will require you to research how best to use them.
-• Pythonfordevelopingyourapplication
-• GitHubforsourcecontrol
-• Trelloforprojectmanagement
-• AWS Services such as S3, Lambda, Redshift, Quicksight and Cloudwatch
-• Grafanaforapplicationmonitoring
-
-
-
-### SETUP
-command to set up environment and install requirements:
-
-`pip install -r requirements.txt`
-
-command to start the docker containers:
-
-`docker-compose up -d`
-
-command to invoke the tests (Linux/Mac):
-
-`python3 -m pytest test/`
-
-command to invoke the tests (Windows):
-
-`python -m pytest test/`
-
-### SPRINT ONE - ETL with Database
+• DataAnalytics/Visualisations/BusinessIntelligence 
+• Development Operations(DevOps tech such as unix scripting to prepare the cloudformation)
+• AWS Services such as S3, EC2, Lambda, Redshift, and Cloudwatch
+• Grafana for application monitoring
+• GitHub for source control
 
 #### 1. Extracting Data from CSV
 Our client has given us an example CSV file for the type of data we will be dealing with. As part of the Point of conception stage we have used this file to create our Extract stage of the pipeline. Python pandas library was used to extract data from csv in dataframe format. 
@@ -75,23 +48,19 @@ Below describe the area that we will normalize our data:
 Transformed and normalized data was loaded to mysql using python library pymysql and sqlalchemy for database connection. Designed schema was implemented to model our data.<img width="632" alt="Screenshot 2022-12-11 at 16 41 56" src="https://user-images.githubusercontent.com/78314396/213438420-0c854b75-5800-42e5-8c8c-9d349b41b68e.png">
 <img width="910" alt="Screenshot 2022-12-11 at 16 43 39" src="https://user-images.githubusercontent.com/78314396/213438436-f0991a93-f1c5-4112-9150-02e920d0334f.png">
 
-### SPRINT TWO - ETL with Data-Warehouse
-
-#### 1. Seting up CloudFormation
+#### 5. Seting up CloudFormation
 CloudFormation Templates for lambda function, s3 bucket permission and notification was created using a .yaml file. Templates was loaded into a s3 bucket and a stack was created and updated using a shell scripting file. 
 
-#### 2. ETL lambda and S3 Bucket
+#### 6. ETL lambda and S3 Bucket
 The client will be droping their csv file every evening into the s3 bucket. The Lambda has been triggered with the s3 bucket such that it can run the ETL code when a file lands the s3 bucket i.e. The Extract and Transformation processing on the data.  The Transformation will remove all the sensitive data and convert the data into the appropriated format for later use (in data visulatision to help the business's decision making).  After finishing the extract and transform processes, the consolidated file for all the branches will be stored back in to the S3 bucket for load processing to the AWS Redshift data warehouse.
 
-#### 3. Modify Lambda to load data into Redshift
+#### 7. Modify Lambda to load data into Redshift
 A separate lambda has been created to load the transformed data into the redshift data warehouse
 
-### SPRINT THREE - Visualization & Monitoring
-
-#### 1. Grafana Setup for AWS Infrastruction and Data Sources
+#### 8. Grafana Setup for AWS Infrastruction and Data Sources
 For Setup, an EC2 instance was created with a grafana i am role to be able to give access to grafana. The SSH key was used for connecting to the local host. Redshift and CloudWatch was connected to grafana as data source for easy monitoring. EC2, Lambda Invocations and Redshift was monitored.
 
-#### 2. Visualization of Sales Data for Business Insights
+#### 9. Visualization of Sales Data for Business Insights
 The client wants to see a visualisation of products sold, they want to know:
 - Volume (# products sold per time period)
 - Volume (# products sold per branch)
