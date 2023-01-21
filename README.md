@@ -46,6 +46,7 @@ Below describe the area that we will normalize our data:
 
 #### 4. Loading Data to PostgreSQL Database
 Transformed and normalized data was loaded to PostgreSQL using python library posq2 for database connection. Designed schema was implemented to model our data.
+
 <img width="632" alt="Screenshot 2022-12-11 at 16 41 56" src="https://user-images.githubusercontent.com/78314396/213438420-0c854b75-5800-42e5-8c8c-9d349b41b68e.png">
 <img width="910" alt="Screenshot 2022-12-11 at 16 43 39" src="https://user-images.githubusercontent.com/78314396/213438436-f0991a93-f1c5-4112-9150-02e920d0334f.png">
 
