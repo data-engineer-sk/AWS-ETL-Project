@@ -1,10 +1,11 @@
-# ETL Pipeline via AWS (S3/Lambda/Redshift/Grafana Services)
-## Data Engineer Project (Generation & Ireland UK)
+# README.md 
+## ETL Pipeline via AWS (S3/Lambda/Redshift/Grafana Services)
+### Data Engineer Project (Generation & Ireland UK)
 
 <html>
 <head></head>
 <body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1087.0">
-<h1><span style="color:#008000;">README.md</span></h1>
+<h1><span style="color:#008000;"></span></h1>
 <img src="https://github.com/data-engineer-sk/AWS-ETL-Project/blob/main/images/ETL%20Final%20Infrastructure.png" ALIGN=”left” alt="ETL Processing on AWS" />
 </body>
 </html>
