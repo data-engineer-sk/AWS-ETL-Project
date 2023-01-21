@@ -1,6 +1,6 @@
 # README.md 
 ## ETL Pipeline via AWS (S3/Lambda/Redshift/Grafana Services)
-### Data Engineer Project (Generation & Ireland UK)
+> Data Engineer Student Project about for a client café business (at Generation & Ireland UK)
 
 <html>
 <head></head>
@@ -9,8 +9,6 @@
 <img src="https://github.com/data-engineer-sk/AWS-ETL-Project/blob/main/images/ETL%20Final%20Infrastructure.png" ALIGN=”left” alt="ETL Processing on AWS" />
 </body>
 </html>
-  
-> A student project about implementation of ETL pipeline via AWS serices for a client café business.
 
 ## BACKGROUND
 The project provides service to our client who run his café business in various branches in UK.  However, the café has seen unprecedented growth and has expanded to hundreds of outlets across the country.  Due to the demand the company is receiving, they need to figure out how they can best target new and returning customers, and also understand which products are selling well.  They are experiencing issues with collating and analysing the data they are producing at each branch, as their technical setup is limited.  I am now to be requested to step in and provide consultation on what they need to do in order to grow their technical offerings, so that they can continue to accelerate their growth.
