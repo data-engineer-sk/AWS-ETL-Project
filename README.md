@@ -44,12 +44,13 @@ Below describe the area that we will normalize our data:
 4. Split the single colume in to multiple column (e.g.Basket Items (Name, Size & Price) column into Busket items, item name, item size and item price, etc)
 5. Clean the data in splited column (e.g. Remove the empty space, repeating data and 'end of line character', etc)
 
-#### 4. Loading Data to Redshift data warehouse
-Transformed and normalized data was loaded to mysql using python library pymysql and sqlalchemy for database connection. Designed schema was implemented to model our data.<img width="632" alt="Screenshot 2022-12-11 at 16 41 56" src="https://user-images.githubusercontent.com/78314396/213438420-0c854b75-5800-42e5-8c8c-9d349b41b68e.png">
+#### 4. Loading Data to PostgreSQL Database
+Transformed and normalized data was loaded to PostgreSQL using python library posq2 for database connection. Designed schema was implemented to model our data.
+<img width="632" alt="Screenshot 2022-12-11 at 16 41 56" src="https://user-images.githubusercontent.com/78314396/213438420-0c854b75-5800-42e5-8c8c-9d349b41b68e.png">
 <img width="910" alt="Screenshot 2022-12-11 at 16 43 39" src="https://user-images.githubusercontent.com/78314396/213438436-f0991a93-f1c5-4112-9150-02e920d0334f.png">
 
 #### 5. Seting up CloudFormation
-CloudFormation Templates for lambda function, s3 bucket permission and notification was created using a .yaml file. Templates was loaded into a s3 bucket and a stack was created and updated using a shell scripting file. 
+Prepare a CloudFormation Templates for lambda function, s3 bucket permission and notification was created using a .yaml file. Templates was loaded into a s3 bucket and a stack was created and updated using a shell scripting file. 
 
 #### 6. ETL lambda and S3 Bucket
 The client will be droping their csv file every evening into the s3 bucket. The Lambda has been triggered with the s3 bucket such that it can run the ETL code when a file lands the s3 bucket i.e. The Extract and Transformation processing on the data.  The Transformation will remove all the sensitive data and convert the data into the appropriated format for later use (in data visulatision to help the business's decision making).  After finishing the extract and transform processes, the consolidated file for all the branches will be stored back in to the S3 bucket for load processing to the AWS Redshift data warehouse.
