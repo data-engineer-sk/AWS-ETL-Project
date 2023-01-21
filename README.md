@@ -39,10 +39,11 @@ Transformation of data was done using pandas to remove sensitive information tha
 #### 3. Normalizing Data
 Below describe the area that we will normalize our data:
 1. Convert the timestamp data type column to data time column data type
-2. Creating the header for the data sets
-3. Creating a new index in the data sets
-4. Split the single colume in to multiple column (e.g.Basket Items (Name, Size & Price) column into Busket items, item name, item size and item price, etc)
-5. Clean the data in splited column (e.g. Remove the empty space, repeating data and 'end of line character', etc)
+2. Remove the sensitive data (e.g. Customer name and Card Numbers)
+3. Creating the header for the data sets
+4. Creating a new index in the data sets
+5. Split the large single colume in to multiple columns (e.g. Basket Items (Name, Size & Price) column into Busket items, item name, item size and item price, etc)
+6. Clean the data in splited column (e.g. Remove the empty space, repeating data and '\n', etc)
 
 #### 4. Loading Data to PostgreSQL Database
 Transformed and normalized data was loaded to PostgreSQL using python library posq2 for database connection. Designed schema was implemented to model our data.
