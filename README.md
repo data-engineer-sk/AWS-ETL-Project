@@ -1,4 +1,5 @@
-# Data Engineer Project : ETL Pipeline via AWS (S3/Lambda/Redshift/Grafana Services)
+# ETL Pipeline via AWS (S3/Lambda/Redshift/Grafana Services)
+## Data Engineer Project (Generation & Ireland UK)
 
 <html>
 <head></head>
