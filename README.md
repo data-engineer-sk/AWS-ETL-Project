@@ -72,8 +72,7 @@ Below describe the area that we will normalize our data:
 5. Clean the data in splited column (e.g. Remove the empty space, repeating data and 'end of line character', etc)
 
 #### 4. Loading Data to MYSQL Database
-Transformed and normalized data was loaded to mysql using python library pymysql and sqlalchemy for database connection. Designed schema was implemented to model our data.
-<img width="632" alt="Screenshot 2022-12-11 at 16 41 56" src="https://user-images.githubusercontent.com/78314396/213438420-0c854b75-5800-42e5-8c8c-9d349b41b68e.png">
+Transformed and normalized data was loaded to mysql using python library pymysql and sqlalchemy for database connection. Designed schema was implemented to model our data.<img width="632" alt="Screenshot 2022-12-11 at 16 41 56" src="https://user-images.githubusercontent.com/78314396/213438420-0c854b75-5800-42e5-8c8c-9d349b41b68e.png">
 <img width="910" alt="Screenshot 2022-12-11 at 16 43 39" src="https://user-images.githubusercontent.com/78314396/213438436-f0991a93-f1c5-4112-9150-02e920d0334f.png">
 
 ### SPRINT TWO - ETL with Data-Warehouse
