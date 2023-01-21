@@ -105,5 +105,3 @@ The Redshift Integrated chart has been used to visualize the data to get this fi
 ![Total Spend](https://user-images.githubusercontent.com/78314396/213444252-8bffe39b-1444-4265-a8e4-538938d5e881.jpeg)
 ![Average Spend](https://user-images.githubusercontent.com/78314396/213444720-31339f07-46f6-47e7-b727-289f6d0d3040.jpeg)
 ![Quantity of Item All Stores](https://user-images.githubusercontent.com/78314396/213444756-5bb9c8aa-e4d0-456b-a0f5-431a12d1d3d7.jpeg)
-
-### 3. CI/CD Setup with github secrets & actions
