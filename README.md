@@ -46,7 +46,7 @@ Below describe the area that we will normalize our data:
 6. Clean the data in splited column (e.g. Remove the empty space, repeating data and '\n', etc)
 
 #### 4. Loading Data to PostgreSQL Database
-Transformed and normalized data was loaded to PostgreSQL using python library posq2 for database connection. Designed schema was implemented to model our data.
+Transformed and normalized data was loaded to PostgreSQL using python library psycopg2 for database connection. Designed schema was implemented to model our data.
 
 <img width="632" alt="Screenshot 2022-12-11 at 16 41 56" src="https://user-images.githubusercontent.com/78314396/213438420-0c854b75-5800-42e5-8c8c-9d349b41b68e.png">
 <img width="910" alt="Screenshot 2022-12-11 at 16 43 39" src="https://github.com/data-engineer-sk/AWS-ETL-Project/blob/main/Redshift-4.2.png">
