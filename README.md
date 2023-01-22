@@ -6,7 +6,7 @@
 <head></head>
 <body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1087.0">
 <h1><span style="color:#008000;"></span></h1>
-<img src="https://github.com/data-engineer-sk/AWS-ETL-Project/blob/main/images/ETL%20Final%20Infrastructure.png" ALIGN=”left” alt="ETL Processing on AWS" />
+<img src="https://github.com/data-engineer-sk/AWS-ETL-Project/blob/main/My%20ETL%20Process%20via%20AWS.png" ALIGN=”left” alt="ETL Processing on AWS" />
 </body>
 </html>
 
