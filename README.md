@@ -43,7 +43,7 @@ Below describe the area that we will normalize our data:
 2. Remove the sensitive data (e.g. Customer name and Card Numbers)
 3. Creating the header for the data sets
 4. Creating a new index in the data sets
-5. Split the large single colume in to multiple columns (e.g. Basket Items (Name, Size & Price) column into Busket items, item name, item size and item price, etc)
+5. Split the large single column in to multiple columns (e.g. Basket Items (Name, Size & Price) column into Busket items, item name, item size and item price, etc)
 6. Clean the data in splited column (e.g. Remove the empty space, repeating data and '\n', etc)
 
 #### 4. Loading Data to PostgreSQL Database
