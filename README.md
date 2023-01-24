@@ -34,7 +34,7 @@ In this project, the following data engineering techs will be applied in order t
 Our client uploads CSV files for the type of data we will be dealing with to database. As part of the Point of conception stage we have used this file to create our Extract stage of the pipeline. Python pandas library was used to extract data from csv into dataframe format for futher processing. 
 
 #### 2. Transforming Data
-Transformation of data was done using Pandas to remove sensitive information.  For instance, customer name and credit card.  Splited a long column and decomposed into a smaller chunk of data (*e.g. Break Column "Basket Items (Name, Size and Price)" into "Name", "Size", "Price"*)  
+Transformation of data was done using Pandas to remove sensitive information.  For instance, customer name and credit card.  Splited a long column and decomposed into a smaller chunk of data (**e.g. Break Column "Basket Items (Name, Size and Price)" into "Name", "Size", "Price"**)  
 ![CSV File from Chesterfield Branch](https://github.com/data-engineer-sk/AWS-ETL-Project/blob/main/Chesterfield-Branch-CSV.png)
 
 #### 3. Normalizing Data
@@ -43,8 +43,8 @@ Below describe the area that we will normalize our data:
 >2. *Remove the sensitive data (e.g. Customer name and Card Numbers)*
 >3. *Creating the header for the data sets*
 >4. *Creating a new index in the data sets*
->5. *Split the large single column in to multiple columns (e.g. Basket Items (Name, Size & Price) column into Busket items, item name, item size and item price, etc)*
->6. *Clean the data in splited column (e.g. Remove the empty space, repeating data and '\n', etc)*
+>5. *Split the large single column in to multiple columns (**e.g. Basket Items (Name, Size & Price) column into Busket items, item name, item size and item price, etc**)*
+>6. *Clean the data in splited column (**e.g. Remove the empty space, repeating data and '\n', etc**)*
 
 #### 4. Loading Data to PostgreSQL Database
 Transformed and normalized data were loaded to PostgreSQL using python library psycopg2 for database connection. Designed schema was implemented to model our data.
