@@ -34,7 +34,7 @@ In this project, the following data engineering techs will be applied in order t
 Our client has given us an example CSV file for the type of data we will be dealing with. As part of the Point of conception stage we have used this file to create our Extract stage of the pipeline. Python pandas library was used to extract data from csv in dataframe format. 
 
 #### 2. Transforming Data
-Transformation of data was done using Pandas to remove sensitive information such as customer name and credit card.  The long column has also been decomposed into small chunk of data (e.g. Break Column "" into "Name", "Size", "Price")  
+Transformation of data was done using Pandas to remove sensitive information such as customer name and credit card.  The long column has also been decomposed into small chunk of data (e.g. Break Column "Basket Item (Name, Size and Price)" into "Name", "Size", "Price")  
 ![CSV File from Chesterfield Branch](https://github.com/data-engineer-sk/AWS-ETL-Project/blob/main/CSV-Chesterfield.png)
 
 #### 3. Normalizing Data
