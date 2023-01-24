@@ -21,14 +21,14 @@ Every day, each branch has to prepare a CSV file containing data about every tra
 
 ## SKILLS AND TECHNOLOGIES REQUIRED
 In this project, the following data engineering techs will be applied in order to successfully build the pipeline. Namely:
-- Python
-- ETL Techniques
-- DataWarehousing
-- DataAnalytics/Visualisations/BusinessIntelligence 
-- Development Operations(DevOps tech such as unix scripting to prepare the cloudformation)
-- AWS Services such as S3, EC2, Lambda, Redshift, and Cloudwatch
-- Grafana for application monitoring
-- GitHub for source control
+- *Python*
+- *ETL Techniques*
+- *DataWarehousing*
+- *DataAnalytics/Visualisations/BusinessIntelligence* 
+- *Development Operations(DevOps tech such as unix scripting to prepare the cloudformation)*
+- *AWS Services such as S3, EC2, Lambda, Redshift, and Cloudwatch*
+- *Grafana for application monitoring*
+- *GitHub for source control*
 
 #### 1. Extracting Data from CSV
 Our client has given us an example CSV file for the type of data we will be dealing with. As part of the Point of conception stage we have used this file to create our Extract stage of the pipeline. Python pandas library was used to extract data from csv in dataframe format. 
