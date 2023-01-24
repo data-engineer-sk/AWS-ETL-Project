@@ -17,7 +17,7 @@ The project provides service to our client who run his café business in various
 The company currently has no way of identifying trends, meaning they are potentially losing out on major revenue streams.  They are in desperate need of help putting together a platform that will allow them to easily understand all of the data they are producing.  Due to the highly professional work you completed for them in the past, they are keen to work alongside your project in creating a solution to solve the problem their problems.
 
 ## REQUIREMENT
-Every day, each branch has to prepare a CSV file containing data about every transaction they made for that day is generated.  At 8pm, the data is uploaded to a piece of software installed in the back office computers.  Daily, weekly or monthly reports for sales figures and other related business metrics are created.
+Every day, each branch has to prepare a CSV file containing data about every transaction they made for that day is generated.  At 8pm, the data is uploaded from an appliction in the back office computers.  Daily, weekly or monthly reports for sales figures and other related business metrics are created for business analysis.
 
 ## SKILLS AND TECHNOLOGIES REQUIRED
 In this project, the following data engineering techs will be applied in order to successfully build the pipeline. Namely:
@@ -31,10 +31,10 @@ In this project, the following data engineering techs will be applied in order t
 >- *GitHub for source control*
 
 #### 1. Extracting Data from CSV
-Our client has given us an example CSV file for the type of data we will be dealing with. As part of the Point of conception stage we have used this file to create our Extract stage of the pipeline. Python pandas library was used to extract data from csv in dataframe format. 
+Our client uploads CSV files for the type of data we will be dealing with to database. As part of the Point of conception stage we have used this file to create our Extract stage of the pipeline. Python pandas library was used to extract data from csv into dataframe format for futher processing. 
 
 #### 2. Transforming Data
-Transformation of data was done using Pandas to remove sensitive information such as customer name and credit card.  The long column has also been decomposed into small chunk of data (e.g. Break Column "Basket Items (Name, Size and Price)" into "Name", "Size", "Price")  
+Transformation of data was done using Pandas to remove sensitive information.  For instance, customer name and credit card.  Splited a long column and decomposed into a smaller chunk of data (e.g. Break Column "Basket Items (Name, Size and Price)" into "Name", "Size", "Price")  
 ![CSV File from Chesterfield Branch](https://github.com/data-engineer-sk/AWS-ETL-Project/blob/main/Chesterfield-Branch-CSV.png)
 
 #### 3. Normalizing Data
