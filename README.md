@@ -35,7 +35,7 @@ Our client has given us an example CSV file for the type of data we will be deal
 
 #### 2. Transforming Data
 Transformation of data was done using pandas to remove sensitive information that includes customer name and credit card.
-![CSV File from Chesterfield Branch](https://user-images.githubusercontent.com/78314396/213444252-8bffe39b-1444-4265-a8e4-538938d5e881.jpeg)
+![CSV File from Chesterfield Branch](https://github.com/data-engineer-sk/AWS-ETL-Project/commit/28fa46829da573c048503d62be8a275f25523fa2)
 
 #### 3. Normalizing Data
 Below describe the area that we will normalize our data:
