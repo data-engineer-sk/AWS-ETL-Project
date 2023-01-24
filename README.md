@@ -39,12 +39,12 @@ Transformation of data was done using Pandas to remove sensitive information suc
 
 #### 3. Normalizing Data
 Below describe the area that we will normalize our data:
-1. *Convert the timestamp data type column to data time column data type*
-2. *Remove the sensitive data (e.g. Customer name and Card Numbers)*
-3. *Creating the header for the data sets*
-4. *Creating a new index in the data sets*
-5. *Split the large single column in to multiple columns (e.g. Basket Items (Name, Size & Price) column into Busket items, item name, item size and item price, etc)*
-6. *Clean the data in splited column (e.g. Remove the empty space, repeating data and '\n', etc)*
+>1. *Convert the timestamp data type column to data time column data type*
+>2. *Remove the sensitive data (e.g. Customer name and Card Numbers)*
+>3. *Creating the header for the data sets*
+>4. *Creating a new index in the data sets*
+>5. *Split the large single column in to multiple columns (e.g. Basket Items (Name, Size & Price) column into Busket items, item name, item size and item price, etc)*
+>6. *Clean the data in splited column (e.g. Remove the empty space, repeating data and '\n', etc)*
 
 #### 4. Loading Data to PostgreSQL Database
 Transformed and normalized data were loaded to PostgreSQL using python library psycopg2 for database connection. Designed schema was implemented to model our data.
@@ -66,9 +66,9 @@ For Setup, an EC2 instance was created with a grafana i am role to be able to gi
 
 #### 9. Visualization of Sales Data for Business Insights
 The client wants to see a visualisation of products sold, they want to know:
-- *Volume (# products sold per time period)*
-- *Volume (# products sold per branch)*
-- *Revenue (per branch, per timescale*
+>- *Volume (# products sold per time period)*
+>- *Volume (# products sold per branch)*
+>- *Revenue (per branch, per timescale*
 
 The grafana was able to monitor the lambda invocations using cloudwatch as data source:
 <img width="1423" alt="Screenshot 2023-01-18 at 11 19 46" src="https://user-images.githubusercontent.com/78314396/213655299-9b9bb7b4-d152-4ac0-8cd5-bf29704e0685.png">
